@@ -1,0 +1,11 @@
+@media(max-width:575px){
+    .main-xs{
+        width: 100%;
+    }
+}
+@media(min-width:992px){
+    .main-lg{
+        width: calc(100% - 300px);
+        margin-left: auto;
+    }
+}

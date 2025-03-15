@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#000000;
+    --white:#fff;
+    --acent:#149ddd;
+    --bg-light:#292F37;
+    --bg-bg-blue:#F4FAFD;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* scroll spy */
+.nav-pills .nav-link.active{
+    background-color: #ffffff09;
+    color: white !important;
+}
+.nav-pills .nav-link.active i{
+    color: var(--acent);
+}
+/* scroll spy */
+/* header start  */
+header{
+    width: 300px;
+    background-color: var(--black);
+}
+header .h-icon ul li a{
+    background-color: var(--bg-light) !important;
+}
+header .h-icon ul li a:hover{
+    background-color: var(--acent) !important;
+}
+header nav ul li a{
+    color: var(--bg-light) !important;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    color: var(--white) !important;
+}
+header nav ul li a:hover i{
+    color: var(--acent) !important;
+}
+.ofys{
+    overflow-y: scroll;
+}
+/* header end  */
+/* main start  */
+.hero .hero-img{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: #00000075;
+}
+.hero .hero-img p span{
+    border-color: var(--acent) !important;
+}
+/* main end  */
+/* about start  */
+.about .about-header h2::before,.skill .skill-header h2::before,.resume .resume-header h2::before,.portfolio .portfolio-header h2::before,.testimonial .testimonial-header h2::before,.service .service-title h2::before
+,.contact .contact-header h2::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: var(--acent);
+    bottom: 0;
+}
+/* about end  */
+/* skill start */
+.skill,.testimonial{
+    background-color: var(--bg-bg-blue);
+}
+/* skill end */
+/* resume start  */
+.resume .resume-content::before{
+    content: '';
+    position: absolute;
+    padding: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: #149ddd 1px solid;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+/* resume end */
+/* portfolio start */
+.portfolio nav ul li a:hover{
+    color: var(--acent) !important;
+}
+.profile-img{
+    overflow: hidden;
+}
+.profile-img img{
+    transition: 0.5s;
+}
+.portfolio .profile-img:hover img{
+    transform: scale(1.2);
+}
+.profile-img-overlay{
+    opacity: 0;
+    transition: 0.5s;
+}
+.profile-img:hover .profile-img-overlay{
+    opacity: 1;
+}
+.disabled span{
+    opacity: 0;
+}
+/* portfolio end  */
+/* services section start  */
+.sercol:hover .sercont a h5{
+    color: var(--acent) !important;
+}
+.sercol:hover .sericon{
+    background-color: var(--white) !important;
+    border: 1px #149ddd solid;
+}
+.sercol:hover .sericon a i{
+    color: var(--acent) !important;
+}
+/* services section end */
+/* testimonial start  */
+.test-content{
+    text-align: justify;
+    padding: 10px 20px;
+}
+/* testimonial end  */
+/* Contact start */
+.contact .info-box-item{
+    margin-bottom: 40px;
+}
+.contact .info-box-item i{
+    font-size: 20px;
+    color: #149ddd;
+    background-color: rgba(20, 157, 221, 0.08);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+.contact .info-content h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact .info-content p{
+    font-size: 14px;
+}
+.contact .info-box-item:hover i{
+    background-color: #149DDD;
+    color: white;
+}
+/* Contact end */
+/* footer section's CSS start */
+footer {
+    width: calc(100% - 300px);
+    margin-left: auto;
+    background-color: var(--bg-bg-blue); 
+}
+footer .copy-right p,footer .designed-by p{
+    font-size: 14px
+}
+/* footer section's CSS end */
