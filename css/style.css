@@ -44,9 +44,6 @@ header nav ul li a:hover{
 header nav ul li a:hover i{
     color: var(--acent) !important;
 }
-.ofys{
-    overflow-y: scroll;
-}
 /* header end  */
 /* main start  */
 .hero .hero-img{
